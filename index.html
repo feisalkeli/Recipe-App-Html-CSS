@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simply Recipes || Starter</title>
+    <title>Simply Recipes</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- normalize -->
@@ -16,9 +16,109 @@
     />
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-   <h1>Home Page </h1>
-    
+    <header class="header-body">
+      <nav class="header-nav">
+        <div class="header-title">
+          Simply
+          <span class="header-text">Recipes</span>
+        </div>
+        <div>
+          <ul class="header-links">
+            <li><a href="" class="header-link-item">Home</a></li>
+            <li><a href="about.html" class="header-link-item">About</a></li>
+            <li><a href="tags.html" class="header-link-item">Tags</a></li>
+            <li><a href="recipes.html" class="header-link-item">Recipes</a></li>
+          </ul>
+        </div>
+        <div class="contact-button-div">
+          <div class="contact-button">Contact Us</div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Image section -->
+    <section class="hero-section">
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>simply recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!-- Tag Section -->
+    <section class="tag-container">
+      <div class="recipes-container">
+        <div class="recipe-title">
+          <h1>Recipes</h1>
+          <p><a href="tag-template.html">Beef(1)</a></p>
+          <p><a href="tag-template.html">Breakfast(2)</a></p>
+          <p><a href="tag-template.html">Carrots(3)</a></p>
+          <p><a href="tag-template.html">Food(4)</a></p>
+        </div>
+      </div>
+      <div class="recipesImages-container">
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-1.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Carne Asada</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-2.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Greek Ribs</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-3.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Vegetable Soup</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-4.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Banana Pancakes</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">SimplyRecipes</span> Built by
+          <a href="https://www.johnsmilga.com/">Coding Addict</a>
+        </p>
+      </footer>
+    </footer>
   </body>
 </html>
