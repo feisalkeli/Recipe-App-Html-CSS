@@ -293,6 +293,13 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column;
+  /* todo */
+  height: 0;
+  transition: var(--transition);
+  overflow: hidden;
+}
+.show-links {
+  height: 310px;
 }
 .nav-link {
   display: block;
@@ -310,3 +317,111 @@ Navbar
 .contact-link a {
   padding: 0.15rem 1rem;
 }
+
+@media screen and(min-width:992px) {
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+  }
+  .nav-links {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .contact-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* 
+===========
+Page
+===========
+*/
+
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+/* 
+===========
+Footer
+===========
+*/
+.page-footer {
+  height: 4rem;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer p {
+  margin-bottom: 0;
+}
+.footer-logo,
+.page-footer a {
+  color: var(--primary-500);
+}
+
+/* 
+===========
+Hero
+===========
+*/
+.hero {
+  height: 40vh;
+  background: url(../assets/main.jpeg) center/cover no-repeat;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+}
+
+.hero-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and(min-width:768px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+/* 
+===========
+Footer
+===========
+*/
